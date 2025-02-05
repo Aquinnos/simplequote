@@ -1,6 +1,6 @@
 # SimpleQuote
 
-SimpleQuote is a web application built with Next.js and React that displays random quotes using the ZenQuotes API. The application utilizes components from the AceternityUI library for a sleek and modern user interface. (https://vercel.com/krystians-projects-80429549/simplequote/Ac7iq9y4MtimivZ6sXGvV4uBvDKN)
+SimpleQuote is a web application built with Next.js and React that displays random quotes using the ZenQuotes API. The application utilizes components from the AceternityUI library for a sleek and modern user interface. (https://simplequote.vercel.app/)
 
 ## Features
 
