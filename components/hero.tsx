@@ -1,20 +1,26 @@
 import React, { useState } from 'react';
 
-const hero = () => {
+const Hero = () => {
   const [quote, setQuote] = useState<string>('');
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const getMotivationalQuotes = async () => {
+    setIsLoading(true);
     try {
       const response = await fetch('/api/quote');
       if (!response.ok) {
         throw new Error(`Błąd API: ${response.status}`);
       }
       const data = await response.json();
+
       setQuote(`"${data.q}" - ${data.a}`);
-      document.getElementById('quote')?.classList.add('mt-4');
     } catch (error) {
       console.error('Błąd podczas pobierania cytatów:', error);
       setQuote('Wystąpił błąd podczas pobierania cytatów.');
+    } finally {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 0);
     }
   };
 
@@ -27,11 +33,11 @@ const hero = () => {
         <button className="p-[3px] relative" onClick={getMotivationalQuotes}>
           <div className="absolute inset-0 bg-gradient-to-r from-blue-950 to-purple-400 rounded-lg" />
           <div className="px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">
-            Wygeneruj cytat
+            {isLoading ? 'Ładowanie...' : 'Wygeneruj cytat'}
           </div>
         </button>
         <p
-          className="text-center tracking-widest text-sm md:text-base lg:text-2xl text-white"
+          className="text-center tracking-widest text-sm md:text-base lg:text-2xl pt-5 text-white"
           id="quote"
         >
           {quote}
@@ -41,4 +47,4 @@ const hero = () => {
   );
 };
 
-export default hero;
+export default Hero;
