@@ -15,7 +15,7 @@ To get started with SimpleQuote, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/simplequote.git
+   git clone https://github.com/Aquinnoos/simplequote.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -40,17 +40,9 @@ Open your browser and go to `http://localhost:3000` to see the application in ac
 
 SimpleQuote uses the ZenQuotes API to fetch random quotes. For more information about the API, visit [ZenQuotes API](https://zenquotes.io/).
 
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ## Acknowledgements
 
 - [Next.js](https://nextjs.org/)
 - [React](https://reactjs.org/)
-- [AceternityUI](https://aceternityui.com/)
+- [AceternityUI](https://ui.aceternity.com/)
 - [ZenQuotes API](https://zenquotes.io/)
