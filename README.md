@@ -7,7 +7,6 @@ SimpleQuote is a web application built with Next.js and React that displays rand
 - Fetches random quotes from the ZenQuotes API
 - Responsive design using AceternityUI components
 - Built with Next.js for server-side rendering and fast performance
-- Easy to navigate and user-friendly interface
 
 ## Installation
 
@@ -15,7 +14,7 @@ To get started with SimpleQuote, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Aquinnoos/simplequote.git
+   git clone https://github.com/aquinnoos/simplequote.git
    ```
 2. Navigate to the project directory:
    ```bash
