@@ -14,7 +14,7 @@ To get started with SimpleQuote, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Aquinnoos/simplequote.git
+   git clone https://github.com/aquinnoos/simplequote.git
    ```
 2. Navigate to the project directory:
    ```bash
