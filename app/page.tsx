@@ -1,9 +1,9 @@
 'use client';
 
-import { BackgroundGradientAnimationDemo } from '@/components/backgroundGradientAnimation';
-import Hero from '@/components/hero';
-import Heading from '@/components/heading';
-import Footer from '@/components/footer';
+import { BackgroundGradientAnimationDemo } from '@/components/BackgroundGradientAnimation';
+import Hero from '@/components/Hero';
+import Heading from '@/components/Heading';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (

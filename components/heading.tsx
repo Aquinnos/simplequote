@@ -1,5 +1,5 @@
 import React from 'react';
-import { ColourfulText } from './ui/colourful-text';
+import { ColourfulText } from './ui/Colourful-Text';
 
 const Heading = () => {
   return (
